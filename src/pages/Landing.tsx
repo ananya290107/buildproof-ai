@@ -23,10 +23,11 @@ const FEATURES = [
 ];
 
 const STATS = [
-  { value: "2,400+", label: "Projects Verified" },
-  { value: "98.2%", label: "Detection Accuracy" },
-  { value: "150+", label: "Hackathons Powered" },
+  { value: "Beta", label: "Stage" },
+  { value: "Testing", label: "Verification Model" },
+  { value: "Growing", label: "Dataset" },
 ];
+
 
 export default function Landing() {
   return (
@@ -47,7 +48,9 @@ export default function Landing() {
             className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-secondary text-secondary-foreground text-sm font-medium mb-8"
           >
             <Zap className="w-4 h-4 text-primary" />
-            AI-Powered Hackathon Verification
+           AI-Powered Hackathon Verification
+
+
           </motion.div>
 
           <motion.h1
@@ -66,8 +69,10 @@ export default function Landing() {
             transition={{ duration: 0.5, delay: 0.25 }}
             className="mt-6 text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed"
           >
-            BuildProof uses AI to analyze deployments, verify tech stacks, and detect
-            whether hackathon teams actually built what they're presenting.
+           BuildProof analyzes deployments and project structure to help judges
+           understand how much of a project is actually implemented.
+           This is an experimental prototype and results may evolve.
+
           </motion.p>
 
           <motion.div
@@ -159,7 +164,7 @@ export default function Landing() {
         <div className="flex flex-wrap items-center justify-center gap-6 text-muted-foreground text-sm">
           <div className="flex items-center gap-2"><Lock className="w-4 h-4" /> End-to-end encrypted</div>
           <div className="flex items-center gap-2"><Eye className="w-4 h-4" /> Transparent scoring</div>
-          <div className="flex items-center gap-2"><Shield className="w-4 h-4" /> Trusted by 150+ organizers</div>
+          <div className="flex items-center gap-2"><Shield className="w-4 h-4" /> Early access prototype </div>
         </div>
       </section>
 
